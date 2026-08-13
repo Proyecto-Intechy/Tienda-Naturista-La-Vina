@@ -249,3 +249,42 @@ img{
     }
 
 }
+
+/* BOTÓN WHATSAPP */
+
+.whatsapp{
+    position:fixed;
+    width:60px !important;
+    height:60px !important;
+    bottom:20px;
+    right:20px;
+    z-index:1000;
+}
+
+.whatsapp img{
+    width:60px !important;
+    height:60px !important;
+    max-width:60px !important;
+    object-fit:contain;
+    border-radius:50%;
+    box-shadow:2px 2px 10px rgba(0,0,0,0.3);
+}
+
+/* En celulares */
+
+@media screen and (max-width:600px){
+
+    .whatsapp{
+        width:55px !important;
+        height:55px !important;
+        bottom:15px;
+        right:15px;
+    }
+
+    .whatsapp img{
+        width:55px !important;
+        height:55px !important;
+        max-width:55px !important;
+    }
+
+}
