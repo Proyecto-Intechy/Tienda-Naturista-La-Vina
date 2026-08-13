@@ -426,9 +426,9 @@ h2{
     }
 
     .logo img{
-        width:105px !important;
-        height:105px !important;
-        max-width:105px !important;
+        width:130px !important;
+        height:auto  !important;
+        max-width:130px !important;
         object-fit:contain;
     }
 
