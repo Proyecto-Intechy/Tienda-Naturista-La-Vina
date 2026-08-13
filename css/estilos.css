@@ -401,3 +401,71 @@ h2{
     }
 
 }
+
+/* =========================================
+   ENCABEZADO EN CELULARES
+   ========================================= */
+
+@media screen and (max-width:600px){
+
+    .encabezado{
+        width:100%;
+        max-width:100%;
+        display:flex !important;
+        flex-direction:column !important;
+        align-items:center !important;
+        justify-content:center !important;
+        padding:20px 10px !important;
+        gap:8px !important;
+        overflow:hidden;
+    }
+
+    .logo{
+        width:100%;
+        text-align:center;
+    }
+
+    .logo img{
+        width:85px !important;
+        height:85px !important;
+        max-width:85px !important;
+        object-fit:contain;
+    }
+
+    .texto-encabezado{
+        width:100%;
+        max-width:100%;
+        text-align:center;
+        overflow:hidden;
+    }
+
+    .texto-encabezado h1{
+        width:100%;
+        max-width:100%;
+        margin:0;
+        padding:0;
+        font-size:2.1rem !important;
+        line-height:1.15;
+        text-align:center;
+        overflow-wrap:break-word;
+        word-wrap:break-word;
+    }
+
+    .texto-encabezado p{
+        width:100%;
+        max-width:100%;
+        margin:8px 0 0;
+        padding:0;
+        font-size:0.95rem !important;
+        line-height:1.4;
+        text-align:center;
+        overflow-wrap:break-word;
+    }
+
+    .texto-encabezado p::before,
+    .texto-encabezado p::after{
+        content:"";
+        margin:0;
+    }
+
+}
