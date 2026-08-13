@@ -380,3 +380,197 @@ h2{
     font-size:30px;
     cursor:pointer;
 }
+
+/* =========================================
+   ADAPTACIÓN PARA CELULARES
+   ========================================= */
+
+*{
+    box-sizing:border-box;
+}
+
+html{
+    width:100%;
+    overflow-x:hidden;
+}
+
+body{
+    width:100%;
+    margin:0;
+    overflow-x:hidden;
+}
+
+/* ENCABEZADO */
+
+.encabezado{
+    width:100%;
+}
+
+/* LOGO */
+
+.logo img{
+    max-width:100%;
+}
+
+/* MENÚ */
+
+.menu{
+    width:100%;
+}
+
+/* IMÁGENES */
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+/* BANNER */
+
+.banner{
+    width:100%;
+    max-width:1200px;
+    margin:0 auto;
+    padding:40px 20px;
+}
+
+.banner img{
+    width:100%;
+    max-width:100%;
+    height:auto;
+    display:block;
+    margin:20px auto;
+}
+
+/* CONTENIDO */
+
+.contenido{
+    width:100%;
+    max-width:1000px;
+    margin:auto;
+    padding:30px 20px;
+}
+
+/* PRODUCTOS */
+
+.productos{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:stretch;
+    gap:20px;
+    flex-wrap:wrap;
+    padding:20px;
+}
+
+.producto{
+    max-width:250px;
+}
+
+/* =========================================
+   CELULARES
+   ========================================= */
+
+@media (max-width:600px){
+
+    /* ENCABEZADO */
+
+    .encabezado{
+        flex-direction:column;
+        padding:20px 10px;
+        gap:10px;
+    }
+
+    .logo img{
+        width:70px;
+        height:70px;
+    }
+
+    .texto-encabezado{
+        text-align:center;
+    }
+
+    .texto-encabezado h1{
+        font-size:2rem;
+        line-height:1.1;
+    }
+
+    .texto-encabezado p{
+        font-size:0.9rem;
+    }
+
+    .texto-encabezado p::before,
+    .texto-encabezado p::after{
+        content:"";
+        margin:0;
+    }
+
+    /* MENÚ */
+
+    .menu{
+        display:flex;
+        flex-direction:column;
+        gap:5px;
+        padding:10px;
+    }
+
+    .menu a{
+        display:block;
+        width:100%;
+        text-align:center;
+        padding:10px;
+    }
+
+    /* BANNER */
+
+    .banner{
+        padding:30px 15px;
+    }
+
+    .banner h2{
+        font-size:1.8rem;
+    }
+
+    .banner p{
+        font-size:1rem;
+    }
+
+    .banner img{
+        width:100%;
+        height:auto;
+    }
+
+    /* CONTENIDO */
+
+    .contenido{
+        padding:25px 15px;
+    }
+
+    .contenido h2{
+        font-size:1.8rem;
+    }
+
+    .contenido p{
+        font-size:1rem;
+        line-height:1.6;
+    }
+
+    /* PRODUCTOS */
+
+    .productos{
+        flex-direction:column;
+        align-items:center;
+        padding:15px;
+    }
+
+    .producto{
+        width:100%;
+        max-width:320px;
+    }
+
+    /* FOOTER */
+
+    footer{
+        padding:25px 15px;
+    }
+}
