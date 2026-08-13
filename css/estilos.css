@@ -380,3 +380,11 @@ h2{
     font-size:30px;
     cursor:pointer;
 }
+
+.banner img{
+    display:block;
+    width:800px;
+    max-width:100%;
+    height:auto;
+    margin:20px auto;
+}
